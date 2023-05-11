@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+/* Style the container element */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 1200px; /* Add a maximum width to the container */
+  margin-left: auto; /* Center the container horizontally */
+  margin-right: auto;
+}
+
+/* Style the card elements */
+.card {
+  flex: 1; /* Use flexbox to distribute the cards evenly across the row */
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* Style the image inside the card */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Style the heading and title */
+.card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Style the button */
+.card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #212521;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #34a834;
+}
+
+/* Add media queries to adjust the number of columns on smaller screens */
+@media screen and (max-width: 767px) {
+  .card {
+    flex-basis: 100%; /* Make each card take up the full width of the container */
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card {
+    flex-basis: 48%; /* Make each card take up 48% of the width of the container */
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    flex-basis: 31%; /* Make each card take up 31% of the width of the container */
+  }
+}
+
+
+/* Style the navigation bar */
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #333;
+  height: 50px;
+}
+
+/* Style the list items */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+/* Style the links */
+nav a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #b6c20e;
+}
+
+/* Style the active link */
+nav a.active {
+  background-color: #b6c20e;
+}
+
+footer {
+  background-color: #b6c20e;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 14px;
+  margin: 0;
+}
